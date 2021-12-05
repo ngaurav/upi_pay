@@ -68,7 +68,7 @@ class UpiPayPlugin internal constructor(registrar: Registrar, channel: MethodCha
       if(tn != null) {
         uriStr += ("&tn=" + Uri.encode(tn))
       }
-      uriStr += "&mode=00" // &orgid=000000"
+      uriStr += "&mode=02" // &orgid=000000"
       val uri = Uri.parse(uriStr)
       // Log.d("upi_pay", "initiateTransaction URI: " + uri.toString())
 
